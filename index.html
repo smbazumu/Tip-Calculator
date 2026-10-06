@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Fira+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <header class="header">
+        <p>SPLIT THE BILL - KEEP THE PEACE</p>
+        <div class="header theme">
+            <label for="">Theme</label>
+            <img src="icon-moon.svg" alt="" id="theme">
+        </div>
+    </header>
+    <main>
+        <section class="toppart">
+            <h1>Good service deserves a <span>good tip.</span></h1>
+            <p>Afriendly little calculator for working out the tip</p>
+            <p>and splittingthe final bill with your table.</p>
+        </section>
+        <section class="bottompart">
+            <p>TIP CALCULATOR</p>
+            <h2>Let's split the bill.</h2>
+            <div class="bottomsection">
+                <div class="tipcalculations">
+                    <div>
+                        <label for="">
+                            <label>Bill amount</label>
+                            <div class="inputwrapper">
+                                <b>$</b><input type="number" name="" id="bill" min="0" step="0.01" placeholder="0.00">
+                            </div>
+                        </label>
+                        <fieldset class="tipselection">
+                            <legend>Choose Tip</legend>
+                            <div>
+                                <button class="tips" value="5">5%</button>
+                                <button class="tips" value="10">10%</button>
+                                <button class="tips" value="15">15%</button>
+                                <button class="tips" value="20">20%</button>
+                                <button class="tips" value="25">25%</button>
+                                <input type="number" name="" id="customtip" placeholder="Custom">
+                            </div>
+                        </fieldset>
+                        <label for="">
+                            <label for="">Number of People</label>
+                            <div class="inputwrapper">
+                                <button class="minus">-</button><input type="number" name="" id="people" min="1" value="1"><button class="plus">+</button>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <aside class="finalsummary">
+                    <div class="tipsummary">
+                        <div class="tipsummary perclient">
+                            <b>Tip/person</b>
+                            <small>Total tip divided equally</small>
+                        </div>
+                        <strong id="pertip">$0.00</strong>
+                    </div>
+                    <div class="tipsummary">
+                        <div class="tipsummary perclient">
+                            <b>Total/person</b>
+                            <small>Bill + tip, split equally</small>
+                        </div>
+                        <strong id="perperson">$0.00</strong>
+                    </div>
+                    <p>Enter your bill to get started</p>
+                    <button id="reset">Reset Calculator</button>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

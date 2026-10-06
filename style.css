@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(rgba(233, 220, 44, 0.701), rgba(98, 219, 221, 0.859));
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: "Fira Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body.dark {
+    background: radial-gradient(rgb(32, 32, 32), rgb(218, 215, 215));
+    color: whitesmoke;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header p, .theme {
+    font-size: 14px;
+}
+
+.theme img {
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+}
+
+.toppart {
+    margin-bottom: 30px;
+}
+
+.toppart h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.toppart span {
+    display: block;
+    color: gray;
+}
+
+.bottompart {
+    padding: 15px;
+    background: white;
+    border-radius: 15px;
+    max-width: 1000px;
+}
+
+body.dark .bottompart {
+    background: radial-gradient(rgb(109, 108, 108), rgb(119, 101, 101));
+    color: whitesmoke;
+}
+
+.bottompart h2 {
+    margin-bottom: 30px;
+}
+
+.bottompart p {
+    margin-bottom: 15px;
+}
+
+.bottomsection {
+    display: flex;
+    align-items: stretch;
+}
+
+.tipcalculations {
+    flex: 0.7;
+}
+
+.tipcalculations p {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.tipcalculations h2 {
+    margin-bottom: 35px;
+}
+
+.inputwrapper {
+    display: flex;
+    width: 95%;
+    height: 55px;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.inputwrapper input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    font-family: "Fira Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body.dark .inputwrapper {
+    background: white;
+}
+
+.inputwrapper input:focus {
+    outline: none;
+    border: none;
+}
+
+.inputwrapper b {
+    margin-left: 15px;
+    color: gray;
+}
+.inputwrapper button {
+    height: 55px;
+    width: 40px;
+    background: rgb(243, 234, 234);
+}
+
+body.dark .inputwrapper button {
+    background: rgb(106, 228, 114);
+    color: black;
+}
+
+.tipselection {
+    margin-bottom: 30px;
+    width: 95%;
+    border: none
+}
+
+.tipselection input,
+.tipselection button {
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background: rgb(243, 234, 234);
+    border-radius: 10px;
+    border: none;
+    font-family: "Fira Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tipselection button:hover,
+.tipselection button:focus,
+.inputwrapper button:hover,
+.inputwrapper button:focus,
+body.dark .inputwrapper button:hover,
+body.dark .inputwrapper button:focus,
+#reset:hover,
+#reset:focus {
+    cursor: pointer;
+    background: aquamarine;
+}
+
+.tipselection div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.tipsummary {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(212, 208, 208);
+}
+
+.perclient {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    border: none;
+}
+
+#pertip {
+    align-self: start;
+    margin-left: auto;
+}
+
+#perperson {
+    align-self: start;
+    margin-left: auto;
+}
+
+.finalsummary p {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    background: gray;
+    padding: 8px;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.finalsummary {
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#reset {
+    height: 50px;
+    background: rgb(106, 228, 114);
+    border-radius: 10px;
+    margin: 0 15px 0 15px;
+}
+
+.minus {
+    border-radius: 15px 0 0 15px;
+    border: none;
+
+}
+
+.plus {
+    border-radius: 0 15px 15px 0;
+    border: none;
+}
+
+#bill {
+    border: none;
+    margin-left: 15px;
+}
+
+#people {
+    text-align: center;
+}
+
+#theme:hover {
+    cursor: pointer;
+}
