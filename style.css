@@ -6,12 +6,13 @@
 
 body {
     background: radial-gradient(rgba(233, 220, 44, 0.701), rgba(98, 219, 221, 0.859));
-    padding: 20px;
-    max-width: 1000px;
+    padding: 1.25rem;
+    max-width: 62.5rem;
     margin: 0 auto;
     font-family: "Fira Mono", monospace;
     font-weight: 400;
     font-style: normal;
+    min-height: 100vh;
 }
 
 body.dark {
@@ -24,23 +25,24 @@ body.dark {
     justify-content: space-between;
 }
 
-.header p, .theme {
-    font-size: 14px;
+.header p,
+.theme {
+    font-size: 0.875rem;
 }
 
 .theme img {
-    width: 14px;
-    height: 14px;
-    margin-left: 5px;
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-left: 0.3125rem;
 }
 
 .toppart {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .toppart h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 3.125rem;
+    margin-bottom: 1.25rem;
 }
 
 .toppart span {
@@ -49,10 +51,11 @@ body.dark {
 }
 
 .bottompart {
-    padding: 15px;
+    padding: 0.9375rem;
     background: white;
-    border-radius: 15px;
-    max-width: 1000px;
+    border-radius: 0.9375rem;
+    max-width: 62.5rem;
+    width: 100%;
 }
 
 body.dark .bottompart {
@@ -61,40 +64,43 @@ body.dark .bottompart {
 }
 
 .bottompart h2 {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .bottompart p {
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 
 .bottomsection {
     display: flex;
     align-items: stretch;
+    width: 100%;
+    gap: 1.5rem;
 }
 
 .tipcalculations {
     flex: 0.7;
+    width: 100%;
 }
 
 .tipcalculations p {
-    font-size: 17px;
-    margin-bottom: 10px;
+    font-size: 1.0625rem;
+    margin-bottom: 0.625rem;
 }
 
 .tipcalculations h2 {
-    margin-bottom: 35px;
+    margin-bottom: 2.1875rem;
 }
 
 .inputwrapper {
     display: flex;
-    width: 95%;
-    height: 55px;
+    width: 100%;
+    height: 3.4375rem;
     align-items: center;
-    border: 1px solid gray;
-    border-radius: 15px;
+    border: 0.0625rem solid gray;
+    border-radius: 0.9375rem;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .inputwrapper input {
@@ -116,12 +122,13 @@ body.dark .inputwrapper {
 }
 
 .inputwrapper b {
-    margin-left: 15px;
+    margin-left: 0.9375rem;
     color: gray;
 }
+
 .inputwrapper button {
-    height: 55px;
-    width: 40px;
+    height: 3.4375rem;
+    width: 2.5rem;
     background: rgb(243, 234, 234);
 }
 
@@ -131,18 +138,18 @@ body.dark .inputwrapper button {
 }
 
 .tipselection {
-    margin-bottom: 30px;
-    width: 95%;
-    border: none
+    margin-bottom: 1.875rem;
+    width: 100%;
+    border: none;
 }
 
 .tipselection input,
 .tipselection button {
     width: 100%;
-    height: 45px;
+    height: 2.8125rem;
     text-align: center;
     background: rgb(243, 234, 234);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     border: none;
     font-family: "Fira Mono", monospace;
     font-weight: 400;
@@ -164,7 +171,7 @@ body.dark .inputwrapper button:focus,
 .tipselection div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 0.625rem;
     width: 100%;
     height: 100%;
 }
@@ -172,35 +179,36 @@ body.dark .inputwrapper button:focus,
 .tipsummary {
     display: flex;
     justify-content: center;
-    align-items: start;
-    margin-bottom: 15px;
-    border-bottom: 1px solid rgb(212, 208, 208);
+    align-items: flex-start;
+    margin-bottom: 0.9375rem;
+    border-bottom: 0.0625rem solid rgb(212, 208, 208);
+    width: 100%;
 }
 
 .perclient {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
     border: none;
 }
 
 #pertip {
-    align-self: start;
+    align-self: flex-start;
     margin-left: auto;
 }
 
 #perperson {
-    align-self: start;
+    align-self: flex-start;
     margin-left: auto;
 }
 
 .finalsummary p {
-    margin-bottom: 40px;
-    margin-top: 10px;
+    margin-bottom: 2.5rem;
+    margin-top: 0.625rem;
     background: gray;
-    padding: 8px;
+    padding: 0.5rem;
     align-self: center;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .finalsummary {
@@ -209,31 +217,31 @@ body.dark .inputwrapper button:focus,
     flex-direction: column;
     background: black;
     color: white;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    width: 100%;
 }
 
 #reset {
-    height: 50px;
+    height: 3.125rem;
     background: rgb(106, 228, 114);
-    border-radius: 10px;
-    margin: 0 15px 0 15px;
+    border-radius: 0.625rem;
+    margin: 0 0.9375rem 0 0.9375rem;
 }
 
 .minus {
-    border-radius: 15px 0 0 15px;
+    border-radius: 0.9375rem 0 0 0.9375rem;
     border: none;
-
 }
 
 .plus {
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 0.9375rem 0.9375rem 0;
     border: none;
 }
 
 #bill {
     border: none;
-    margin-left: 15px;
+    margin-left: 0.9375rem;
 }
 
 #people {
@@ -242,4 +250,30 @@ body.dark .inputwrapper button:focus,
 
 #theme:hover {
     cursor: pointer;
+}
+
+@media (max-width: 48rem) {
+    .toppart h1 {
+        font-size: 2.25rem;
+    }
+
+    .bottomsection {
+        flex-direction: column;
+    }
+
+    .tipcalculations,
+    .finalsummary {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 30rem) {
+    body {
+        padding: 0.75rem;
+    }
+
+    .tipselection div {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
