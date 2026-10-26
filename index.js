@@ -24,7 +24,28 @@ const digits = {
 }
 
 bill.addEventListener('input', () => {
-    totalBill = Number(bill.value)
+    const raw = bill.value.replace(/[^0-9.]/g, "");
+    const parts = raw.split(".");
+    const intPart = parts[0];
+
+    let intFormatted = "";
+    if (intPart) {
+        intFormatted = Number(intPart).toLocaleString("en-US");
+    }
+
+    if (raw.includes(".")) {
+        let decimals = "";
+        if (parts[1]) {
+            decimals = parts[1].slice(0, 2);
+        }
+        if (intFormatted === "") {
+            intFormatted = "0";
+        }
+        bill.value = intFormatted + "." + decimals;
+    } else {
+        bill.value = intFormatted;
+    }
+    totalBill = Number(bill.value.replace(/[^0-9.]/g, ""))
     calculateTotalTip(tipValue, peopleNum, totalBill)
 })
 
